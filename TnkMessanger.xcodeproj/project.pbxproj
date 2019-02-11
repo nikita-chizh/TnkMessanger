@@ -11,12 +11,12 @@
 		112C9427220EF53C0069BC75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C9426220EF53C0069BC75 /* ViewController.swift */; };
 		112C942A220EF53C0069BC75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112C9428220EF53C0069BC75 /* Main.storyboard */; };
 		112C942D220EF53C0069BC75 /* TnkMessanger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 112C942B220EF53C0069BC75 /* TnkMessanger.xcdatamodeld */; };
-		112C942F220EF53D0069BC75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112C942E220EF53D0069BC75 /* Assets.xcassets */; };
 		112C9432220EF53D0069BC75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112C9430220EF53D0069BC75 /* LaunchScreen.storyboard */; };
 		112C943D220EF53D0069BC75 /* TnkMessangerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C943C220EF53D0069BC75 /* TnkMessangerTests.swift */; };
 		112C9448220EF53D0069BC75 /* TnkMessangerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C9447220EF53D0069BC75 /* TnkMessangerUITests.swift */; };
 		1179EB81221095B100B1DE2B /* StateTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179EB80221095B100B1DE2B /* StateTracker.swift */; };
 		1179EB832210A7F800B1DE2B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179EB822210A7F800B1DE2B /* Logger.swift */; };
+		11F724342211C4AC00042B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F724332211C4AC00042B0E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 		112C9426220EF53C0069BC75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		112C9429220EF53C0069BC75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		112C942C220EF53C0069BC75 /* TnkMessanger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TnkMessanger.xcdatamodel; sourceTree = "<group>"; };
-		112C942E220EF53D0069BC75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		112C9431220EF53D0069BC75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		112C9433220EF53D0069BC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		112C9438220EF53D0069BC75 /* TnkMessangerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TnkMessangerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +52,7 @@
 		112C9449220EF53D0069BC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1179EB80221095B100B1DE2B /* StateTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTracker.swift; sourceTree = "<group>"; };
 		1179EB822210A7F800B1DE2B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		11F724332211C4AC00042B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +105,10 @@
 			children = (
 				112C9424220EF53C0069BC75 /* AppDelegate.swift */,
 				112C9426220EF53C0069BC75 /* ViewController.swift */,
+				11F724332211C4AC00042B0E /* Assets.xcassets */,
 				1179EB80221095B100B1DE2B /* StateTracker.swift */,
 				1179EB822210A7F800B1DE2B /* Logger.swift */,
 				112C9428220EF53C0069BC75 /* Main.storyboard */,
-				112C942E220EF53D0069BC75 /* Assets.xcassets */,
 				112C9430220EF53D0069BC75 /* LaunchScreen.storyboard */,
 				112C9433220EF53D0069BC75 /* Info.plist */,
 				112C942B220EF53C0069BC75 /* TnkMessanger.xcdatamodeld */,
@@ -239,7 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				112C9432220EF53D0069BC75 /* LaunchScreen.storyboard in Resources */,
-				112C942F220EF53D0069BC75 /* Assets.xcassets in Resources */,
+				11F724342211C4AC00042B0E /* Assets.xcassets in Resources */,
 				112C942A220EF53C0069BC75 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
