@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		112C9425220EF53C0069BC75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C9424220EF53C0069BC75 /* AppDelegate.swift */; };
+		112C9427220EF53C0069BC75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C9426220EF53C0069BC75 /* ViewController.swift */; };
+		112C942A220EF53C0069BC75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112C9428220EF53C0069BC75 /* Main.storyboard */; };
+		112C942D220EF53C0069BC75 /* TnkMessanger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 112C942B220EF53C0069BC75 /* TnkMessanger.xcdatamodeld */; };
+		112C942F220EF53D0069BC75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112C942E220EF53D0069BC75 /* Assets.xcassets */; };
+		112C9432220EF53D0069BC75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112C9430220EF53D0069BC75 /* LaunchScreen.storyboard */; };
+		112C943D220EF53D0069BC75 /* TnkMessangerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C943C220EF53D0069BC75 /* TnkMessangerTests.swift */; };
+		112C9448220EF53D0069BC75 /* TnkMessangerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C9447220EF53D0069BC75 /* TnkMessangerUITests.swift */; };
+		1179EB81221095B100B1DE2B /* StateTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179EB80221095B100B1DE2B /* StateTracker.swift */; };
+		1179EB832210A7F800B1DE2B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179EB822210A7F800B1DE2B /* Logger.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		112C9439220EF53D0069BC75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 112C9419220EF53C0069BC75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 112C9420220EF53C0069BC75;
+			remoteInfo = TnkMessanger;
+		};
+		112C9444220EF53D0069BC75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 112C9419220EF53C0069BC75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 112C9420220EF53C0069BC75;
+			remoteInfo = TnkMessanger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		112C9421220EF53C0069BC75 /* TnkMessanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TnkMessanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		112C9424220EF53C0069BC75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		112C9426220EF53C0069BC75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		112C9429220EF53C0069BC75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		112C942C220EF53C0069BC75 /* TnkMessanger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TnkMessanger.xcdatamodel; sourceTree = "<group>"; };
+		112C942E220EF53D0069BC75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		112C9431220EF53D0069BC75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		112C9433220EF53D0069BC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112C9438220EF53D0069BC75 /* TnkMessangerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TnkMessangerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		112C943C220EF53D0069BC75 /* TnkMessangerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TnkMessangerTests.swift; sourceTree = "<group>"; };
+		112C943E220EF53D0069BC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112C9443220EF53D0069BC75 /* TnkMessangerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TnkMessangerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		112C9447220EF53D0069BC75 /* TnkMessangerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TnkMessangerUITests.swift; sourceTree = "<group>"; };
+		112C9449220EF53D0069BC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1179EB80221095B100B1DE2B /* StateTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTracker.swift; sourceTree = "<group>"; };
+		1179EB822210A7F800B1DE2B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		112C941E220EF53C0069BC75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112C9435220EF53D0069BC75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112C9440220EF53D0069BC75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		112C9418220EF53C0069BC75 = {
+			isa = PBXGroup;
+			children = (
+				112C9423220EF53C0069BC75 /* TnkMessanger */,
+				112C943B220EF53D0069BC75 /* TnkMessangerTests */,
+				112C9446220EF53D0069BC75 /* TnkMessangerUITests */,
+				112C9422220EF53C0069BC75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		112C9422220EF53C0069BC75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				112C9421220EF53C0069BC75 /* TnkMessanger.app */,
+				112C9438220EF53D0069BC75 /* TnkMessangerTests.xctest */,
+				112C9443220EF53D0069BC75 /* TnkMessangerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		112C9423220EF53C0069BC75 /* TnkMessanger */ = {
+			isa = PBXGroup;
+			children = (
+				112C9424220EF53C0069BC75 /* AppDelegate.swift */,
+				112C9426220EF53C0069BC75 /* ViewController.swift */,
+				1179EB80221095B100B1DE2B /* StateTracker.swift */,
+				1179EB822210A7F800B1DE2B /* Logger.swift */,
+				112C9428220EF53C0069BC75 /* Main.storyboard */,
+				112C942E220EF53D0069BC75 /* Assets.xcassets */,
+				112C9430220EF53D0069BC75 /* LaunchScreen.storyboard */,
+				112C9433220EF53D0069BC75 /* Info.plist */,
+				112C942B220EF53C0069BC75 /* TnkMessanger.xcdatamodeld */,
+			);
+			path = TnkMessanger;
+			sourceTree = "<group>";
+		};
+		112C943B220EF53D0069BC75 /* TnkMessangerTests */ = {
+			isa = PBXGroup;
+			children = (
+				112C943C220EF53D0069BC75 /* TnkMessangerTests.swift */,
+				112C943E220EF53D0069BC75 /* Info.plist */,
+			);
+			path = TnkMessangerTests;
+			sourceTree = "<group>";
+		};
+		112C9446220EF53D0069BC75 /* TnkMessangerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				112C9447220EF53D0069BC75 /* TnkMessangerUITests.swift */,
+				112C9449220EF53D0069BC75 /* Info.plist */,
+			);
+			path = TnkMessangerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		112C9420220EF53C0069BC75 /* TnkMessanger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 112C944C220EF53D0069BC75 /* Build configuration list for PBXNativeTarget "TnkMessanger" */;
+			buildPhases = (
+				112C941D220EF53C0069BC75 /* Sources */,
+				112C941E220EF53C0069BC75 /* Frameworks */,
+				112C941F220EF53C0069BC75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TnkMessanger;
+			productName = TnkMessanger;
+			productReference = 112C9421220EF53C0069BC75 /* TnkMessanger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		112C9437220EF53D0069BC75 /* TnkMessangerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 112C944F220EF53D0069BC75 /* Build configuration list for PBXNativeTarget "TnkMessangerTests" */;
+			buildPhases = (
+				112C9434220EF53D0069BC75 /* Sources */,
+				112C9435220EF53D0069BC75 /* Frameworks */,
+				112C9436220EF53D0069BC75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				112C943A220EF53D0069BC75 /* PBXTargetDependency */,
+			);
+			name = TnkMessangerTests;
+			productName = TnkMessangerTests;
+			productReference = 112C9438220EF53D0069BC75 /* TnkMessangerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		112C9442220EF53D0069BC75 /* TnkMessangerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 112C9452220EF53D0069BC75 /* Build configuration list for PBXNativeTarget "TnkMessangerUITests" */;
+			buildPhases = (
+				112C943F220EF53D0069BC75 /* Sources */,
+				112C9440220EF53D0069BC75 /* Frameworks */,
+				112C9441220EF53D0069BC75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				112C9445220EF53D0069BC75 /* PBXTargetDependency */,
+			);
+			name = TnkMessangerUITests;
+			productName = TnkMessangerUITests;
+			productReference = 112C9443220EF53D0069BC75 /* TnkMessangerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		112C9419220EF53C0069BC75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Никита";
+				TargetAttributes = {
+					112C9420220EF53C0069BC75 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					112C9437220EF53D0069BC75 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 112C9420220EF53C0069BC75;
+					};
+					112C9442220EF53D0069BC75 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 112C9420220EF53C0069BC75;
+					};
+				};
+			};
+			buildConfigurationList = 112C941C220EF53C0069BC75 /* Build configuration list for PBXProject "TnkMessanger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 112C9418220EF53C0069BC75;
+			productRefGroup = 112C9422220EF53C0069BC75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				112C9420220EF53C0069BC75 /* TnkMessanger */,
+				112C9437220EF53D0069BC75 /* TnkMessangerTests */,
+				112C9442220EF53D0069BC75 /* TnkMessangerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		112C941F220EF53C0069BC75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112C9432220EF53D0069BC75 /* LaunchScreen.storyboard in Resources */,
+				112C942F220EF53D0069BC75 /* Assets.xcassets in Resources */,
+				112C942A220EF53C0069BC75 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112C9436220EF53D0069BC75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112C9441220EF53D0069BC75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		112C941D220EF53C0069BC75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1179EB832210A7F800B1DE2B /* Logger.swift in Sources */,
+				112C9427220EF53C0069BC75 /* ViewController.swift in Sources */,
+				112C9425220EF53C0069BC75 /* AppDelegate.swift in Sources */,
+				1179EB81221095B100B1DE2B /* StateTracker.swift in Sources */,
+				112C942D220EF53C0069BC75 /* TnkMessanger.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112C9434220EF53D0069BC75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112C943D220EF53D0069BC75 /* TnkMessangerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112C943F220EF53D0069BC75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112C9448220EF53D0069BC75 /* TnkMessangerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		112C943A220EF53D0069BC75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 112C9420220EF53C0069BC75 /* TnkMessanger */;
+			targetProxy = 112C9439220EF53D0069BC75 /* PBXContainerItemProxy */;
+		};
+		112C9445220EF53D0069BC75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 112C9420220EF53C0069BC75 /* TnkMessanger */;
+			targetProxy = 112C9444220EF53D0069BC75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		112C9428220EF53C0069BC75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				112C9429220EF53C0069BC75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		112C9430220EF53D0069BC75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				112C9431220EF53D0069BC75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		112C944A220EF53D0069BC75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		112C944B220EF53D0069BC75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		112C944D220EF53D0069BC75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MVU6Q92ZB5;
+				INFOPLIST_FILE = TnkMessanger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chzh.TnkMessanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		112C944E220EF53D0069BC75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MVU6Q92ZB5;
+				INFOPLIST_FILE = TnkMessanger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				"MTL_ENABLE_DEBUG_INFO[arch=*]" = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = Chzh.TnkMessanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		112C9450220EF53D0069BC75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MVU6Q92ZB5;
+				INFOPLIST_FILE = TnkMessangerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chzh.TnkMessangerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TnkMessanger.app/TnkMessanger";
+			};
+			name = Debug;
+		};
+		112C9451220EF53D0069BC75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MVU6Q92ZB5;
+				INFOPLIST_FILE = TnkMessangerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chzh.TnkMessangerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TnkMessanger.app/TnkMessanger";
+			};
+			name = Release;
+		};
+		112C9453220EF53D0069BC75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MVU6Q92ZB5;
+				INFOPLIST_FILE = TnkMessangerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chzh.TnkMessangerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TnkMessanger;
+			};
+			name = Debug;
+		};
+		112C9454220EF53D0069BC75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MVU6Q92ZB5;
+				INFOPLIST_FILE = TnkMessangerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chzh.TnkMessangerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TnkMessanger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		112C941C220EF53C0069BC75 /* Build configuration list for PBXProject "TnkMessanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112C944A220EF53D0069BC75 /* Debug */,
+				112C944B220EF53D0069BC75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		112C944C220EF53D0069BC75 /* Build configuration list for PBXNativeTarget "TnkMessanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112C944D220EF53D0069BC75 /* Debug */,
+				112C944E220EF53D0069BC75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		112C944F220EF53D0069BC75 /* Build configuration list for PBXNativeTarget "TnkMessangerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112C9450220EF53D0069BC75 /* Debug */,
+				112C9451220EF53D0069BC75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		112C9452220EF53D0069BC75 /* Build configuration list for PBXNativeTarget "TnkMessangerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112C9453220EF53D0069BC75 /* Debug */,
+				112C9454220EF53D0069BC75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		112C942B220EF53C0069BC75 /* TnkMessanger.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				112C942C220EF53C0069BC75 /* TnkMessanger.xcdatamodel */,
+			);
+			currentVersion = 112C942C220EF53C0069BC75 /* TnkMessanger.xcdatamodel */;
+			path = TnkMessanger.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 112C9419220EF53C0069BC75 /* Project object */;
+}
