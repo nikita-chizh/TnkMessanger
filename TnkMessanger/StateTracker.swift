@@ -41,6 +41,7 @@ class StateTracker{
     }
     
     static func printState(funcName: String){
+        #if DEBUG
         let curstate = UIApplication.shared.applicationState
         let oldstate = StateTracker.checkAndReturn(newState: curstate)
         if oldstate == nil{
@@ -56,6 +57,7 @@ class StateTracker{
             print(stateToString(curstate))
             print("in function=" + funcName + "\n")
         }
+        #endif
     }
     
 }
