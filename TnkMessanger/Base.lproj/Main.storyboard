@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="o7p-oi-RWx" secondAttribute="height" multiplier="1:1" id="60T-0P-VVa"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fJ-GS-419">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fJ-GS-419">
                                 <rect key="frame" x="16" y="440" width="296" height="61"/>
                                 <string key="text">👨🏼‍💻 Люблю программировать под IOS
 👨‍🎓 Изучать новые технологии
@@ -56,12 +56,13 @@
                             <constraint firstItem="o7p-oi-RWx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" priority="750" id="THY-3k-1FL"/>
                             <constraint firstItem="kty-8E-FWg" firstAttribute="leading" secondItem="o7p-oi-RWx" secondAttribute="leading" id="YGZ-ry-Mz7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s1N-6b-y6E" secondAttribute="trailing" constant="16" id="cwL-PF-lnY"/>
+                            <constraint firstItem="s1N-6b-y6E" firstAttribute="top" secondItem="0fJ-GS-419" secondAttribute="bottom" constant="20" id="eYs-Qr-t2Q"/>
                             <constraint firstItem="o7p-oi-RWx" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.8" id="iHd-YV-wpn"/>
                             <constraint firstItem="0fJ-GS-419" firstAttribute="leading" secondItem="kty-8E-FWg" secondAttribute="leading" id="lfq-IP-acV"/>
                             <constraint firstItem="kty-8E-FWg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.4" id="lra-HG-TFv"/>
                             <constraint firstItem="o7p-oi-RWx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="r5S-gg-alm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kty-8E-FWg" secondAttribute="trailing" constant="16" id="s6B-8Z-8rQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s1N-6b-y6E" secondAttribute="bottom" constant="8" id="yHy-AN-bnT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="s1N-6b-y6E" secondAttribute="bottom" constant="8" id="yHy-AN-bnT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
