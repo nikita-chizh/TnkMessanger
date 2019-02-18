@@ -10,8 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var userPhotoView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        userPhotoView.layer.cornerRadius = userPhotoView.frame.size.width/2
+        userPhotoView.clipsToBounds = true
         Logger.printDebugInfo(#function)
     }
 
