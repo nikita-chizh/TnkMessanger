@@ -12,10 +12,17 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var userPhotoView: UIImageView!
     
+    @IBOutlet weak var editButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         userPhotoView.layer.cornerRadius = userPhotoView.frame.size.width/2
         userPhotoView.clipsToBounds = true
+        //
+        editButton.backgroundColor = .clear
+        editButton.layer.cornerRadius = 20
+        editButton.layer.borderWidth = 1
+        editButton.layer.borderColor = UIColor.black.cgColor
+        //
         Logger.printDebugInfo(#function)
     }
 
