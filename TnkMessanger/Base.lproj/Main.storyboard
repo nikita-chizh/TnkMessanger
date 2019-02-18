@@ -24,10 +24,18 @@
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="o7p-oi-RWx" secondAttribute="height" multiplier="1:1" id="60T-0P-VVa"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Александр Федоров" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kty-8E-FWg">
+                                <rect key="frame" x="49" y="402" width="223" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="kty-8E-FWg" firstAttribute="top" secondItem="o7p-oi-RWx" secondAttribute="bottom" constant="20.5" id="BMk-bc-giH"/>
                             <constraint firstItem="o7p-oi-RWx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="0.9" constant="71" id="Fi9-X2-K6k"/>
+                            <constraint firstItem="kty-8E-FWg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HI0-YK-D8u"/>
                             <constraint firstItem="o7p-oi-RWx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" priority="750" id="THY-3k-1FL"/>
                             <constraint firstItem="o7p-oi-RWx" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.8" id="iHd-YV-wpn"/>
                             <constraint firstItem="o7p-oi-RWx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="r5S-gg-alm"/>
