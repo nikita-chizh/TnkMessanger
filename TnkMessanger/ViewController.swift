@@ -15,16 +15,18 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     var imagePicker = UIImagePickerController()
     
     @IBOutlet weak var userPhotoView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         photoButton.backgroundColor = UIColor(red: 63/255,
                                               green: 120/255,
                                               blue: 240/255,
                                               alpha: 1)//#3F78F0
-        photoButton.layer.cornerRadius = 50
-        userPhotoView.layer.cornerRadius = 50
+        let cornerRadius = 50
+        photoButton.layer.cornerRadius = CGFloat(cornerRadius)
+        userPhotoView.layer.cornerRadius = CGFloat(cornerRadius)
         userPhotoView.clipsToBounds = true
-        print("EditButton frame in viewDidLoad()=")
+        Logger.printDebugInfo("EditButton frame in viewDidLoad()=")
         Logger.printGeneral(editButton.frame)
     }
 
@@ -34,7 +36,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("EditButton frame in viewDidAppear()=")
+        Logger.printDebugInfo("EditButton frame in viewDidAppear()=")
         Logger.printGeneral(editButton.frame)
         // реальные размеры резолвятся при отрисовке
         // X строго задан -> везде один и тот же, как и высота
@@ -65,14 +67,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBAction func choosePhoto(_ sender: Any) {
         showActionSheet()
     }
-    
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
-        self.dismiss(animated: true, completion: { () -> Void in
-            
-        })
-        userPhotoView.image = image
-    }
-    
+        
     func photoLibrary(){
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
             imagePicker.sourceType = .photoLibrary

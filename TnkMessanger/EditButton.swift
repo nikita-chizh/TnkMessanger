@@ -23,7 +23,7 @@ class EditButton: UIButton {
         // до super.init нельзя обращаться к средствам супер класса, потому что они инициализируются
         // как раз в super.init
         super.init(coder: aDecoder)
-        print("EditButton frame in init=")
+        Logger.printDebugInfo("EditButton frame in init=")
         Logger.printGeneral(self.frame)
         self.backgroundColor = .clear
         self.layer.cornerRadius = 20
