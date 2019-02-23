@@ -13,4 +13,10 @@ class Logger{
         print(info)
         #endif
     }
+    
+    static func printGeneral<T>(_ info: T){
+        #if DEBUG
+        print(info)
+        #endif
+    }
 }

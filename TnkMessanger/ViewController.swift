@@ -10,50 +10,49 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var editButton: EditButton!
     @IBOutlet weak var userPhotoView: UIImageView!
-    
-    @IBOutlet weak var editButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        userPhotoView.layer.cornerRadius = userPhotoView.frame.size.width/2
-        userPhotoView.clipsToBounds = true
+        //userPhotoView.layer.cornerRadius = userPhotoView.frame.size.width/2
+        //userPhotoView.clipsToBounds = true
         //
-        editButton.backgroundColor = .clear
-        editButton.layer.cornerRadius = 20
-        editButton.layer.borderWidth = 1
-        editButton.layer.borderColor = UIColor.black.cgColor
-        //
-        Logger.printDebugInfo(#function)
+        print("EditButton frame in viewDidLoad()=")
+        Logger.printGeneral(editButton.frame)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        Logger.printDebugInfo(#function)
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        Logger.printDebugInfo(#function)
+        print("EditButton frame in viewDidAppear()=")
+        Logger.printGeneral(editButton.frame)
+        // реальные размеры резолвятся при отрисовке
+        // X строго задан -> везде один и тот же, как и высота
+        // Y и ширина меняются от размера экрана
+        // (16.0, 732.0, 343.0, 30.0) X
+        // (16.0, 522.0, 288.0, 30.0) SE
+        // (16.0, 816.0, 382.0, 30.0) XS MAX
+        // Любой другой print:
+        // (16.0, 522.0, 288.0, 30.0)
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        Logger.printDebugInfo(#function)
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        Logger.printDebugInfo(#function)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        Logger.printDebugInfo(#function)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        Logger.printDebugInfo(#function)
     }
 }
 

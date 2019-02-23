@@ -14,6 +14,7 @@
 		112C9432220EF53D0069BC75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112C9430220EF53D0069BC75 /* LaunchScreen.storyboard */; };
 		112C943D220EF53D0069BC75 /* TnkMessangerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C943C220EF53D0069BC75 /* TnkMessangerTests.swift */; };
 		112C9448220EF53D0069BC75 /* TnkMessangerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C9447220EF53D0069BC75 /* TnkMessangerUITests.swift */; };
+		1140E3562221A8F500A667FD /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1140E3552221A8F500A667FD /* EditButton.swift */; };
 		1179EB81221095B100B1DE2B /* StateTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179EB80221095B100B1DE2B /* StateTracker.swift */; };
 		1179EB832210A7F800B1DE2B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179EB822210A7F800B1DE2B /* Logger.swift */; };
 		11F724342211C4AC00042B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F724332211C4AC00042B0E /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		112C9443220EF53D0069BC75 /* TnkMessangerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TnkMessangerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		112C9447220EF53D0069BC75 /* TnkMessangerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TnkMessangerUITests.swift; sourceTree = "<group>"; };
 		112C9449220EF53D0069BC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1140E3552221A8F500A667FD /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
 		1179EB80221095B100B1DE2B /* StateTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTracker.swift; sourceTree = "<group>"; };
 		1179EB822210A7F800B1DE2B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		11F724332211C4AC00042B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				112C9430220EF53D0069BC75 /* LaunchScreen.storyboard */,
 				112C9433220EF53D0069BC75 /* Info.plist */,
 				112C942B220EF53C0069BC75 /* TnkMessanger.xcdatamodeld */,
+				1140E3552221A8F500A667FD /* EditButton.swift */,
 			);
 			path = TnkMessanger;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1179EB832210A7F800B1DE2B /* Logger.swift in Sources */,
+				1140E3562221A8F500A667FD /* EditButton.swift in Sources */,
 				112C9427220EF53C0069BC75 /* ViewController.swift in Sources */,
 				112C9425220EF53C0069BC75 /* AppDelegate.swift in Sources */,
 				1179EB81221095B100B1DE2B /* StateTracker.swift in Sources */,

@@ -39,21 +39,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rF-Pd-DlZ" customClass="EditButton" customModule="TnkMessanger" customModuleProvider="target">
+                                <rect key="frame" x="16" y="522" width="288" height="30"/>
+                                <state key="normal" title="Редактировать">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3rF-Pd-DlZ" secondAttribute="bottom" constant="16" id="9YH-hS-FRj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pvp-jb-ScO" secondAttribute="trailing" constant="16" id="AbT-cc-LN6"/>
                             <constraint firstItem="Zxn-qw-dwl" firstAttribute="leading" secondItem="pvp-jb-ScO" secondAttribute="leading" id="UNN-lM-qhm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zxn-qw-dwl" secondAttribute="trailing" constant="16" id="WAn-dl-AAJ"/>
                             <constraint firstItem="Zxn-qw-dwl" firstAttribute="top" secondItem="pvp-jb-ScO" secondAttribute="bottom" constant="22" id="Xzp-Hg-0uG"/>
                             <constraint firstItem="cuH-0d-F2h" firstAttribute="leading" secondItem="Zxn-qw-dwl" secondAttribute="leading" id="Z2k-aZ-Zhv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3rF-Pd-DlZ" secondAttribute="trailing" constant="16" id="ZBf-S1-ZUA"/>
                             <constraint firstItem="cuH-0d-F2h" firstAttribute="top" secondItem="Zxn-qw-dwl" secondAttribute="bottom" constant="7.5" id="eqC-03-2Sm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cuH-0d-F2h" secondAttribute="trailing" constant="16" id="nTk-rD-3rN"/>
                             <constraint firstItem="pvp-jb-ScO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="rDh-W0-t9m"/>
                             <constraint firstItem="pvp-jb-ScO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tKi-vv-Dhe"/>
+                            <constraint firstItem="3rF-Pd-DlZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ySB-0n-oyC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="editButton" destination="3rF-Pd-DlZ" id="psE-ZO-wmi"/>
+                        <outlet property="userPhotoView" destination="pvp-jb-ScO" id="OcO-nj-Iwe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
