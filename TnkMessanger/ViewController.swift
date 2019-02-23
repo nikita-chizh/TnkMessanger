@@ -75,17 +75,40 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     func photoLibrary(){
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
-            imagePicker.delegate = self
-            imagePicker.sourceType = .savedPhotosAlbum;
-            imagePicker.allowsEditing = false
-            self.present(imagePicker, animated: true, completion: nil)
+            imagePicker.sourceType = .photoLibrary
+            commonPicker()
         }
     }
     
+    func camera(){
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            imagePicker.sourceType = .camera
+            commonPicker()
+        }
+    }
+    
+    func commonPicker()
+    {
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = false
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true)
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            userPhotoView.image = image
+        if( picker.sourceType == .photoLibrary)
+        {
+            if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+                userPhotoView.image = image
+            }
+            return
+        }
+        if(picker.sourceType == .camera)
+        {
+            if let  image = info[.editedImage] as? UIImage{
+                userPhotoView.image = image
+            }
+            return 
         }
     }
 
@@ -93,7 +116,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     func showActionSheet() {
         let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertController.Style.actionSheet)
         
-        actionSheet.addAction(UIAlertAction(title: "Camera", style: UIAlertAction.Style.default, handler: nil))
+        actionSheet.addAction(UIAlertAction(title: "Camera", style: UIAlertAction.Style.default, handler: { (alert:UIAlertAction!) -> Void in
+            self.camera()
+        }))
         
         actionSheet.addAction(UIAlertAction(title: "Gallery", style: UIAlertAction.Style.default, handler: { (alert:UIAlertAction!) -> Void in
             self.photoLibrary()
