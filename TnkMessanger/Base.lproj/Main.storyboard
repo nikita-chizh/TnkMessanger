@@ -45,26 +45,37 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuV-m5-WyA">
+                                <rect key="frame" x="232" y="252" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tuV-m5-WyA" secondAttribute="height" multiplier="1:1" id="Fbk-hu-lix"/>
+                                </constraints>
+                                <state key="normal" image="smallCamera"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3rF-Pd-DlZ" secondAttribute="bottom" constant="16" id="9YH-hS-FRj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pvp-jb-ScO" secondAttribute="trailing" constant="16" id="AbT-cc-LN6"/>
+                            <constraint firstItem="tuV-m5-WyA" firstAttribute="bottom" secondItem="pvp-jb-ScO" secondAttribute="bottom" id="LFc-ws-C7c"/>
                             <constraint firstItem="Zxn-qw-dwl" firstAttribute="leading" secondItem="pvp-jb-ScO" secondAttribute="leading" id="UNN-lM-qhm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zxn-qw-dwl" secondAttribute="trailing" constant="16" id="WAn-dl-AAJ"/>
                             <constraint firstItem="Zxn-qw-dwl" firstAttribute="top" secondItem="pvp-jb-ScO" secondAttribute="bottom" constant="22" id="Xzp-Hg-0uG"/>
                             <constraint firstItem="cuH-0d-F2h" firstAttribute="leading" secondItem="Zxn-qw-dwl" secondAttribute="leading" id="Z2k-aZ-Zhv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3rF-Pd-DlZ" secondAttribute="trailing" constant="16" id="ZBf-S1-ZUA"/>
                             <constraint firstItem="cuH-0d-F2h" firstAttribute="top" secondItem="Zxn-qw-dwl" secondAttribute="bottom" constant="7.5" id="eqC-03-2Sm"/>
+                            <constraint firstItem="tuV-m5-WyA" firstAttribute="width" secondItem="pvp-jb-ScO" secondAttribute="width" multiplier="0.25" id="fkJ-5G-29R"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cuH-0d-F2h" secondAttribute="trailing" constant="16" id="nTk-rD-3rN"/>
                             <constraint firstItem="pvp-jb-ScO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="rDh-W0-t9m"/>
                             <constraint firstItem="pvp-jb-ScO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tKi-vv-Dhe"/>
+                            <constraint firstItem="tuV-m5-WyA" firstAttribute="trailing" secondItem="pvp-jb-ScO" secondAttribute="trailing" id="xwe-5m-jfN"/>
                             <constraint firstItem="3rF-Pd-DlZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ySB-0n-oyC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="editButton" destination="3rF-Pd-DlZ" id="psE-ZO-wmi"/>
+                        <outlet property="photoButton" destination="tuV-m5-WyA" id="3RA-OE-tpe"/>
                         <outlet property="userPhotoView" destination="pvp-jb-ScO" id="OcO-nj-Iwe"/>
                     </connections>
                 </viewController>
@@ -75,5 +86,6 @@
     </scenes>
     <resources>
         <image name="placeholder-user" width="600" height="600"/>
+        <image name="smallCamera" width="60" height="60"/>
     </resources>
 </document>
