@@ -8,10 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     @IBOutlet weak var editButton: EditButton!
     @IBOutlet weak var photoButton: UIButton!
+    var imagePicker = UIImagePickerController()
+    
     @IBOutlet weak var userPhotoView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,5 +61,49 @@ class ViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
     }
+    
+    @IBAction func choosePhoto(_ sender: Any) {
+        showActionSheet()
+    }
+    
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
+        self.dismiss(animated: true, completion: { () -> Void in
+            
+        })
+        userPhotoView.image = image
+    }
+    
+    func photoLibrary(){
+        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
+            imagePicker.delegate = self
+            imagePicker.sourceType = .savedPhotosAlbum;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true)
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            userPhotoView.image = image
+        }
+    }
+
+    
+    func showActionSheet() {
+        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertController.Style.actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "Camera", style: UIAlertAction.Style.default, handler: nil))
+        
+        actionSheet.addAction(UIAlertAction(title: "Gallery", style: UIAlertAction.Style.default, handler: { (alert:UIAlertAction!) -> Void in
+            self.photoLibrary()
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+        
+        self.present(actionSheet, animated: true, completion: nil)
+        
+    }
+
 }
 
