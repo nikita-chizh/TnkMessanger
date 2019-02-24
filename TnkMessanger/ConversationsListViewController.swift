@@ -48,7 +48,7 @@ class ConversationsListViewController: UIViewController, UITableViewDataSource, 
     // MARK: - Table view data source
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 2 //TODO переписать на кол-во категорий
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

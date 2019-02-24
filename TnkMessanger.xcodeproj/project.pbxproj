@@ -19,6 +19,8 @@
 		1140E3562221A8F500A667FD /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1140E3552221A8F500A667FD /* EditButton.swift */; };
 		1179EB81221095B100B1DE2B /* StateTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179EB80221095B100B1DE2B /* StateTracker.swift */; };
 		1179EB832210A7F800B1DE2B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179EB822210A7F800B1DE2B /* Logger.swift */; };
+		119426F522233A7E00EEECC5 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119426F422233A7E00EEECC5 /* MessageTableViewCell.swift */; };
+		119426F722233DD500EEECC5 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119426F622233DD500EEECC5 /* ConversationViewController.swift */; };
 		11F724342211C4AC00042B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F724332211C4AC00042B0E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		1140E3552221A8F500A667FD /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
 		1179EB80221095B100B1DE2B /* StateTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTracker.swift; sourceTree = "<group>"; };
 		1179EB822210A7F800B1DE2B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		119426F422233A7E00EEECC5 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		119426F622233DD500EEECC5 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		11F724332211C4AC00042B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				111147502222C6F5007BFC1E /* ConversationsListViewController.swift */,
+				119426F622233DD500EEECC5 /* ConversationViewController.swift */,
 				112C9424220EF53C0069BC75 /* AppDelegate.swift */,
 				112C9426220EF53C0069BC75 /* ViewController.swift */,
 				11F724332211C4AC00042B0E /* Assets.xcassets */,
@@ -121,6 +126,7 @@
 				112C942B220EF53C0069BC75 /* TnkMessanger.xcdatamodeld */,
 				1140E3552221A8F500A667FD /* EditButton.swift */,
 				111147522222C7A8007BFC1E /* DialogTableViewCell.swift */,
+				119426F422233A7E00EEECC5 /* MessageTableViewCell.swift */,
 			);
 			path = TnkMessanger;
 			sourceTree = "<group>";
@@ -276,6 +282,8 @@
 			files = (
 				1179EB832210A7F800B1DE2B /* Logger.swift in Sources */,
 				1140E3562221A8F500A667FD /* EditButton.swift in Sources */,
+				119426F722233DD500EEECC5 /* ConversationViewController.swift in Sources */,
+				119426F522233A7E00EEECC5 /* MessageTableViewCell.swift in Sources */,
 				112C9427220EF53C0069BC75 /* ViewController.swift in Sources */,
 				112C9425220EF53C0069BC75 /* AppDelegate.swift in Sources */,
 				1179EB81221095B100B1DE2B /* StateTracker.swift in Sources */,
