@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ConversationsListViewController: UITableViewController {
-
+class ConversationsListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     enum TableSection: Int {
         case online = 0, offline
     }
+    @IBOutlet weak var headerView: UIView!
     
+    @IBOutlet weak var msgTableView: UITableView!
     // This is the size of our header sections that we will use later on.
     let SectionHeaderHeight: CGFloat = 25
     var testData =
@@ -40,15 +41,17 @@ class ConversationsListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        msgTableView.delegate = self
+        msgTableView.dataSource = self
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Using Swift's optional lookup we first check if there is a valid section of table.
         // Then we check that for the section there is data that goes with.
         if let tableSection = TableSection(rawValue: section) {
@@ -57,11 +60,11 @@ class ConversationsListViewController: UITableViewController {
         return 0
     }
 
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return SectionHeaderHeight
     }
     
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: SectionHeaderHeight))
         view.backgroundColor = UIColor(red: 253.0/255.0, green: 240.0/255.0, blue: 196.0/255.0, alpha: 1)
         let label = UILabel(frame: CGRect(x: 15, y: 0, width: tableView.bounds.width - 30, height: SectionHeaderHeight))
@@ -79,7 +82,7 @@ class ConversationsListViewController: UITableViewController {
         return view
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "DialogTableViewCell"
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? DialogTableViewCell  else {
             fatalError("The dequeued cell is not an instance of " + cellIdentifier)
