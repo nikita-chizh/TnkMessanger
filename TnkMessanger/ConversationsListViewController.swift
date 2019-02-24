@@ -22,6 +22,13 @@ class ConversationsListViewController: UITableViewController {
             [
                 ["User1", "Msg from User1", "2016-04-14T10:44:02", "false"],
                 ["User3", "Msg from User3", "2017-04-14T10:44:0", "true"],
+                ["User4", nil, "2018-04-14T10:44:0", "true"],
+                ["User5 qwertyuioppasdasfasfasfsfasf", "Msg from User5", "2018-04-14T10:44:0", "true"],
+                ["User6 `sdvsdb`sdbsdbszdb qwertyuioppasdasfasfasfsfasf", "Msg from User6 `dv`sbd`dsb`sbd`sbd`sdb`zsbdsdb`sbdsdbszdb", "2018-04-14T10:44:0", "true"],
+                ["User7", "Msg from User7", "2016-04-14T10:44:02", "false"],
+                ["User8", "Msg from User8", "2016-04-14T10:44:02", "false"],
+                ["User9", "Msg from User9", "2016-04-14T10:44:02", "false"],
+                
             ],
             TableSection.offline:
             [
@@ -85,7 +92,9 @@ class ConversationsListViewController: UITableViewController {
             let dialog = dialogs[indexPath.row]
             cell.name = dialog[0]
             cell.message = dialog[1]
-            cell.date = dateFormatter.date(from: dialog[2])!
+            if let strd =  dialog[2], let d = dateFormatter.date(from: strd){
+                cell.date = d
+            }
             if(dialog[3] == "false"){cell.hasUnreadMessages = false}
             if(dialog[3] == "true"){cell.hasUnreadMessages = true}
             if(tableSection == TableSection.online){ cell.online = true}

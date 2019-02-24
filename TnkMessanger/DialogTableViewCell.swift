@@ -54,6 +54,8 @@ class DialogTableViewCell: UITableViewCell, ConversationCellConf {
             msgLabel.text = m
         }else{
             msgLabel.text = "No messages yet"
+            msgLabel.font = UIFont.italicSystemFont(ofSize: 16.0)
+
         }
         if let d = date{
             checkDate()
@@ -61,6 +63,8 @@ class DialogTableViewCell: UITableViewCell, ConversationCellConf {
             let hour = calendar.component(.hour, from: d)
             let minutes = calendar.component(.minute, from: d)
             timeLabel.text = String(hour) + ":" + String(minutes)
+        }else{
+            timeLabel.text = "..."
         }
         if hasUnreadMessages{
             msgLabel.font = UIFont.boldSystemFont(ofSize: 16)
