@@ -9,9 +9,16 @@
 import UIKit
 
 class ConversationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    // Сейчас все упорядоченно, я предполагаю, что бэк тоже так отдаст))
+    var testData =
+        [
+            [true, "Plesiorycteropus was a mammal from Madagascar that became extinct sometime after 200 BCE, as evidenced by radiocarbon dating. Upon its description in 1895 by French naturalist Henri Filhol, Plesiorycteropus was classified with the aardvark, but more recent studies have found little evidence for that linkage. Molecular evidence instead suggests that it is related to the tenrecs, in the order Afrosoricida. Two species are recognized"],
+            [true, "Такая вот простыня"],
+            [false, "Вот ответ"],
+            [false, "P. germainepetterae; subfossil remains of both species have been found in the same site. Only limb and partial pelvis and skull bones have been recovered to date. Plesiorycteropus was probably a digging animal that fed on insects such as termites and ants. It also shows adaptations for climbing and sitting. Estimates of its mass range from 6 to 18 kilograms (13 to 40 lb). Forest destruction by humans may have contributed to its extinction. (Full article...)"]
+    ]
 
     @IBOutlet weak var chatTableView: UITableView!
-    
     @IBOutlet weak var chatBar: UINavigationBar!
     var userName = ""
     override func viewDidLoad() {
@@ -21,19 +28,9 @@ class ConversationViewController: UIViewController, UITableViewDataSource, UITab
         chatTableView.rowHeight = UITableView.automaticDimension;
         chatTableView.estimatedRowHeight = 500
         chatBar.topItem?.title = userName
-        
         testData += testData
         testData += testData
-        
     }
-    // Сейчас все упорядоченно, я предполагаю, что бэк тоже так отдаст))
-    var testData =
-    [
-        [true, "Plesiorycteropus was a mammal from Madagascar that became extinct sometime after 200 BCE, as evidenced by radiocarbon dating. Upon its description in 1895 by French naturalist Henri Filhol, Plesiorycteropus was classified with the aardvark, but more recent studies have found little evidence for that linkage. Molecular evidence instead suggests that it is related to the tenrecs, in the order Afrosoricida. Two species are recognized"],
-        [true, "Такая вот простыня"],
-        [false, "Вот ответ"],
-        [false, "P. germainepetterae; subfossil remains of both species have been found in the same site. Only limb and partial pelvis and skull bones have been recovered to date. Plesiorycteropus was probably a digging animal that fed on insects such as termites and ants. It also shows adaptations for climbing and sitting. Estimates of its mass range from 6 to 18 kilograms (13 to 40 lb). Forest destruction by humans may have contributed to its extinction. (Full article...)"]
-    ]
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1

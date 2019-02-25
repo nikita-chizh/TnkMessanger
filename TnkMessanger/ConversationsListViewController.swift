@@ -12,11 +12,8 @@ class ConversationsListViewController: UIViewController, UITableViewDataSource, 
     enum TableSection: Int {
         case online = 0, offline
     }
-    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var navItem: UINavigationItem!
-    
     @IBOutlet weak var msgTableView: UITableView!
-    // This is the size of our header sections that we will use later on.
     let SectionHeaderHeight: CGFloat = 25
     @IBOutlet weak var buttonItem: UIBarButtonItem!
     var testData =
@@ -49,8 +46,7 @@ class ConversationsListViewController: UIViewController, UITableViewDataSource, 
         var image = UIImage(named: "uicon4040")
         image = image?.withRenderingMode(.alwaysOriginal)
         buttonItem.image = image
-        buttonItem.style = .done
-        buttonItem.target = nil
+        buttonItem.style = .plain
     }
 
     // MARK: - Table view data source
@@ -126,4 +122,6 @@ class ConversationsListViewController: UIViewController, UITableViewDataSource, 
             navigationController?.pushViewController(chatController, animated: true)
         }
     }
+    
+
 }
