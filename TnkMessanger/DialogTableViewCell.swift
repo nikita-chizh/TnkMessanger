@@ -39,18 +39,21 @@ class DialogTableViewCell: UITableViewCell, ConversationCellConf {
         // Configure the view for the selected state
     }
 
-    func checkDate(){
-        let curdate = Date()
-        let calendar = Calendar.current
-        let curComponents = calendar.dateComponents([.year, .month, .day], from: curdate)
-        
+    func diffInDays(_ dateRangeStart: Date) -> Int{
+        let dateRangeEnd = Date()
+        let components = Calendar.current.dateComponents([.day], from: dateRangeStart, to: dateRangeEnd)
+        return components.day ?? 0
     }
     
     func setUp(){
         if let n = name{
             nameLabel.text = n
         }
-        if let m = message{
+        if var m = message{
+            if m.count > 20{
+                m = String(m.prefix(20))
+                m+="..."
+            }
             msgLabel.text = m
         }else{
             msgLabel.text = "No messages yet"
@@ -58,17 +61,34 @@ class DialogTableViewCell: UITableViewCell, ConversationCellConf {
 
         }
         if let d = date{
-            checkDate()
-            let calendar = Calendar.current
-            let hour = calendar.component(.hour, from: d)
-            let minutes = calendar.component(.minute, from: d)
-            timeLabel.text = String(hour) + ":" + String(minutes)
+            // фича с временем сообщения
+            let ndays = diffInDays(d)
+            var text: String
+            if ndays == 0{
+                let calendar = Calendar.current
+                let hour = calendar.component(.hour, from: d)
+                let minutes = calendar.component(.minute, from: d)
+                text = String(hour) + ":" + String(minutes)
+            }
+            else{
+                let calendar = Calendar.current
+                let day = calendar.component(.day, from: d)
+                let month = calendar.component(.month, from: d)
+                text = String(day) + " " + String(month)
+            }
+            timeLabel.text = text
         }else{
             timeLabel.text = "..."
         }
         if hasUnreadMessages{
             msgLabel.font = UIFont.boldSystemFont(ofSize: 16)
         }
+        if !online{
+            self.backgroundColor = UIColor(red: 189/255, green: 183/255, blue: 107/255, alpha: 1)
+        }else{
+            self.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+        }
+        
         
     }
 }

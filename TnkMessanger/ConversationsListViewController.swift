@@ -19,21 +19,31 @@ class ConversationsListViewController: UIViewController, UITableViewDataSource, 
     var testData =
             [
             TableSection.online:
-            [
-                ["User1", "Msg from User1", "2016-04-14T10:44:02", "false"],
-                ["User3", "Msg from User3", "2017-04-14T10:44:0", "true"],
-                ["User4", nil, "2018-04-14T10:44:0", "true"],
-                ["User5 qwertyuioppasdasfasfasfsfasf", "Msg from User5", "2018-04-14T10:44:0", "true"],
-                ["User6 `sdvsdb`sdbsdbszdb qwertyuioppasdasfasfasfsfasf", "Msg from User6 `dv`sbd`dsb`sbd`sbd`sdb`zsbdsdb`sbdsdbszdb", "2018-04-14T10:44:0", "true"],
+            [// имя, последнее сообщение, дата, имеет непрочитанные
+                ["User1", "Msg from User1", "2019-02-25T10:44:02", "false"],
+                ["User2", "very loooooooooooooooooooooooooong msg", "2019-02-25T11:11:02", "true"],
+                ["User3", nil, "2019-02-24T10:44:0", "true"],
+                ["User4", "Msg from User4", "2018-04-14T10:44:0", "true"],
+                ["User5", nil, "2018-04-14T10:44:0", "true"],
+                ["User6", "Msg from User6", "2019-02-24T10:44:02", "false"],
                 ["User7", "Msg from User7", "2016-04-14T10:44:02", "false"],
                 ["User8", "Msg from User8", "2016-04-14T10:44:02", "false"],
                 ["User9", "Msg from User9", "2016-04-14T10:44:02", "false"],
+                ["User10", "Msg from User10", "2016-04-14T10:44:02", "false"]
                 
             ],
             TableSection.offline:
             [
-                ["User2", "Msg from User2", "2016-04-14T10:44:02", "true"],
-                ["User4", "Msg from User4", "2018-04-14T10:44:02", "false"]
+                ["User11", "Msg from User11", "2019-02-25T10:44:02", "false"],
+                ["User12", "Msg from User12", "2019-02-25T10:44:0", "true"],
+                ["User13", nil, "2018-04-14T10:44:0", "true"],
+                ["User14", "Msg from User14", "2018-04-14T10:44:0", "true"],
+                ["User15", nil, "2018-04-14T10:44:0", "true"],
+                ["User16", "Msg from User16", "2016-04-14T10:44:02", "false"],
+                ["User17", "Msg from User17", "2016-04-14T10:44:02", "false"],
+                ["User18", "Msg from User18", "2016-04-14T10:44:02", "false"],
+                ["User19", "Msg from User19", "2016-04-14T10:44:02", "false"],
+                ["User20", "Msg from User20", "2016-04-14T10:44:02", "false"]
             ]
             ]
 

@@ -258,10 +258,10 @@
             </objects>
             <point key="canvasLocation" x="1796" y="1216"/>
         </scene>
-        <!--ProfileViewController-->
+        <!--Профиль-->
         <scene sceneID="yS3-Tt-9cK">
             <objects>
-                <viewController storyboardIdentifier="ProfileViewController" title="ProfileViewController" id="FaE-EW-uc0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" title="Профиль" id="FaE-EW-uc0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Iz-oN-7fS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -286,7 +286,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGX-fQ-azd">
-                                <rect key="frame" x="151" y="270" width="215" height="41"/>
+                                <rect key="frame" x="15" y="428" width="158" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Выбрать фото"/>
                             </button>
@@ -294,15 +294,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6aa-vr-uMa" firstAttribute="top" secondItem="3gt-xe-KQ9" secondAttribute="top" constant="66" id="29S-2X-Le8"/>
-                            <constraint firstItem="3gt-xe-KQ9" firstAttribute="bottom" secondItem="JGX-fQ-azd" secondAttribute="bottom" constant="551" id="4qS-Tq-uLc"/>
-                            <constraint firstItem="JGX-fQ-azd" firstAttribute="leading" secondItem="vUv-fR-ZBI" secondAttribute="trailing" constant="8" symbolic="YES" id="7kt-mX-N7t"/>
                             <constraint firstItem="epD-dD-gbX" firstAttribute="leading" secondItem="3gt-xe-KQ9" secondAttribute="leading" constant="15" id="8kQ-bI-GJ6"/>
-                            <constraint firstItem="3gt-xe-KQ9" firstAttribute="trailing" secondItem="JGX-fQ-azd" secondAttribute="trailing" constant="48" id="BeR-LW-hc9"/>
+                            <constraint firstItem="JGX-fQ-azd" firstAttribute="top" secondItem="vUv-fR-ZBI" secondAttribute="bottom" constant="35" id="A8s-Xl-bcq"/>
+                            <constraint firstItem="JGX-fQ-azd" firstAttribute="leading" secondItem="vUv-fR-ZBI" secondAttribute="leading" id="DLf-K9-pAP"/>
                             <constraint firstItem="epD-dD-gbX" firstAttribute="top" secondItem="3gt-xe-KQ9" secondAttribute="top" constant="95" id="DYU-kE-bqa"/>
                             <constraint firstItem="3gt-xe-KQ9" firstAttribute="trailing" secondItem="epD-dD-gbX" secondAttribute="trailing" constant="15" id="Osd-ND-Gbh"/>
                             <constraint firstItem="3gt-xe-KQ9" firstAttribute="trailing" secondItem="6aa-vr-uMa" secondAttribute="trailing" constant="15" id="buj-hH-ffM"/>
                             <constraint firstItem="vUv-fR-ZBI" firstAttribute="leading" secondItem="3gt-xe-KQ9" secondAttribute="leading" constant="15" id="krS-3D-oqQ"/>
                             <constraint firstItem="6aa-vr-uMa" firstAttribute="leading" secondItem="3gt-xe-KQ9" secondAttribute="leading" constant="15" id="wen-dE-Zcg"/>
+                            <constraint firstItem="3gt-xe-KQ9" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="JGX-fQ-azd" secondAttribute="trailing" constant="241" id="yOK-ch-qVG"/>
                             <constraint firstItem="vUv-fR-ZBI" firstAttribute="top" secondItem="3gt-xe-KQ9" secondAttribute="top" constant="177" id="zSQ-HD-Jdr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3gt-xe-KQ9"/>
