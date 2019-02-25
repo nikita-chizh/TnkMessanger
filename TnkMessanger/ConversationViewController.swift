@@ -27,7 +27,10 @@ class ConversationViewController: UIViewController, UITableViewDataSource, UITab
         chatTableView.dataSource = self
         chatTableView.rowHeight = UITableView.automaticDimension;
         chatTableView.estimatedRowHeight = 500
+        chatTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        //
         chatBar.topItem?.title = userName
+        //
         testData += testData
         testData += testData
     }
@@ -48,6 +51,7 @@ class ConversationViewController: UIViewController, UITableViewDataSource, UITab
         let descr = testData[indexPath.row]
         cell.itIsMyMsg = descr[0] as! Bool
         cell.message = descr[1] as? String
+        
         cell.setUp()
         return cell
     }

@@ -15,6 +15,7 @@ protocol MessgageCellConf {
 class MessageTableViewCell: UITableViewCell, MessgageCellConf {
     var message: String?
     var itIsMyMsg = true
+    
     @IBOutlet weak var myMsg: UILabel!
     @IBOutlet weak var anotherUsrMsg: UILabel!
     override func awakeFromNib() {
