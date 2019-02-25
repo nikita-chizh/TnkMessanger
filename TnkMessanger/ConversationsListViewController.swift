@@ -107,5 +107,15 @@ class ConversationsListViewController: UIViewController, UITableViewDataSource, 
         return cell
     }
 
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        if let tableSection = TableSection(rawValue: indexPath.section),
+        let dialogs = testData[tableSection] {
+            let stboard = UIStoryboard(name: "Main", bundle: nil)
+            let dialog = dialogs[indexPath.row]
+            let username = dialog[0]
+            let chatController = stboard.instantiateViewController(withIdentifier: "ConversationViewController")as!ConversationViewController
+            chatController.userName = username!
+            navigationController?.pushViewController(chatController, animated: true)
+        }
+    }
 }

@@ -12,17 +12,20 @@ class ConversationViewController: UIViewController, UITableViewDataSource, UITab
 
     @IBOutlet weak var chatTableView: UITableView!
     
+    @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var headerView: UIView!
-    
+    var userName = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         chatTableView.delegate = self
         chatTableView.dataSource = self
         chatTableView.rowHeight = UITableView.automaticDimension;
         chatTableView.estimatedRowHeight = 500
+        userNameLabel.text = userName
+        
         testData += testData
         testData += testData
-
+        
     }
     // Сейчас все упорядоченно, я предполагаю, что бэк тоже так отдаст))
     var testData =
