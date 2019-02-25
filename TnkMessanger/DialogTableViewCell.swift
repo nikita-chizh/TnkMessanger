@@ -27,6 +27,10 @@ class DialogTableViewCell: UITableViewCell, ConversationCellConf {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     
+    let msgSizeToCut = 20;
+    let msgFontSize = 16
+    let offlineColor =  UIColor(red: 189/255, green: 183/255, blue: 107/255, alpha: 1)
+    let onlineColor =  UIColor(red: 1, green: 1, blue: 1, alpha: 1)
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -50,14 +54,14 @@ class DialogTableViewCell: UITableViewCell, ConversationCellConf {
             nameLabel.text = n
         }
         if var m = message{
-            if m.count > 20{
-                m = String(m.prefix(20))
+            if m.count > msgSizeToCut{
+                m = String(m.prefix(msgSizeToCut))
                 m+="..."
             }
             msgLabel.text = m
         }else{
             msgLabel.text = "No messages yet"
-            msgLabel.font = UIFont.italicSystemFont(ofSize: 16.0)
+            msgLabel.font = UIFont.italicSystemFont(ofSize: CGFloat(msgFontSize))
 
         }
         if let d = date{
@@ -81,14 +85,12 @@ class DialogTableViewCell: UITableViewCell, ConversationCellConf {
             timeLabel.text = "..."
         }
         if hasUnreadMessages{
-            msgLabel.font = UIFont.boldSystemFont(ofSize: 16)
+            msgLabel.font = UIFont.boldSystemFont(ofSize: CGFloat(msgFontSize))
         }
         if !online{
-            self.backgroundColor = UIColor(red: 189/255, green: 183/255, blue: 107/255, alpha: 1)
+            self.backgroundColor = offlineColor
         }else{
-            self.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+            self.backgroundColor = onlineColor
         }
-        
-        
     }
 }
