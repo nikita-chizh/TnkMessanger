@@ -13,10 +13,12 @@ class ConversationsListViewController: UIViewController, UITableViewDataSource, 
         case online = 0, offline
     }
     @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var navItem: UINavigationItem!
     
     @IBOutlet weak var msgTableView: UITableView!
     // This is the size of our header sections that we will use later on.
     let SectionHeaderHeight: CGFloat = 25
+    @IBOutlet weak var buttonItem: UIBarButtonItem!
     var testData =
             [
             TableSection.online:
@@ -43,6 +45,12 @@ class ConversationsListViewController: UIViewController, UITableViewDataSource, 
         super.viewDidLoad()
         msgTableView.delegate = self
         msgTableView.dataSource = self
+        navItem.title = "Tinkoff Messanger"
+        var image = UIImage(named: "uicon4040")
+        image = image?.withRenderingMode(.alwaysOriginal)
+        buttonItem.image = image
+        buttonItem.style = .done
+        buttonItem.target = nil
     }
 
     // MARK: - Table view data source

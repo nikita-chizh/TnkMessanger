@@ -12,8 +12,7 @@ class ConversationViewController: UIViewController, UITableViewDataSource, UITab
 
     @IBOutlet weak var chatTableView: UITableView!
     
-    @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var chatBar: UINavigationBar!
     var userName = ""
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +20,7 @@ class ConversationViewController: UIViewController, UITableViewDataSource, UITab
         chatTableView.dataSource = self
         chatTableView.rowHeight = UITableView.automaticDimension;
         chatTableView.estimatedRowHeight = 500
-        userNameLabel.text = userName
+        chatBar.topItem?.title = userName
         
         testData += testData
         testData += testData
