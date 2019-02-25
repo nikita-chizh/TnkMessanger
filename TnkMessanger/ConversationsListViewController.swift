@@ -9,13 +9,16 @@
 import UIKit
 
 class ConversationsListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    enum TableSection: Int {
-        case online = 0, offline
-    }
     @IBOutlet weak var navItem: UINavigationItem!
     @IBOutlet weak var msgTableView: UITableView!
-    let SectionHeaderHeight: CGFloat = 25
     @IBOutlet weak var buttonItem: UIBarButtonItem!
+    
+    enum TableSection: Int, CaseIterable {
+        case online = 0, offline
+    }
+    let sectionHeaderHeight: CGFloat = 25
+    let sectionHeaderColor = UIColor(red: 253.0/255.0, green: 240.0/255.0, blue: 196.0/255.0, alpha: 1)
+    let sectionHeaderFontSize = 16
     var testData =
             [
             TableSection.online:
@@ -62,12 +65,10 @@ class ConversationsListViewController: UIViewController, UITableViewDataSource, 
     // MARK: - Table view data source
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2 //TODO переписать на кол-во категорий
+        return TableSection.allCases.count
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // Using Swift's optional lookup we first check if there is a valid section of table.
-        // Then we check that for the section there is data that goes with.
         if let tableSection = TableSection(rawValue: section) {
             return testData[tableSection]!.count
         }
@@ -75,14 +76,14 @@ class ConversationsListViewController: UIViewController, UITableViewDataSource, 
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return SectionHeaderHeight
+        return sectionHeaderHeight
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: SectionHeaderHeight))
-        view.backgroundColor = UIColor(red: 253.0/255.0, green: 240.0/255.0, blue: 196.0/255.0, alpha: 1)
-        let label = UILabel(frame: CGRect(x: 15, y: 0, width: tableView.bounds.width - 30, height: SectionHeaderHeight))
-        label.font = UIFont.boldSystemFont(ofSize: 15)
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: sectionHeaderHeight))
+        view.backgroundColor = sectionHeaderColor
+        let label = UILabel(frame: CGRect(x: 15, y: 0, width: tableView.bounds.width - 30, height: sectionHeaderHeight))
+        label.font = UIFont.boldSystemFont(ofSize: CGFloat(sectionHeaderFontSize))
         label.textColor = UIColor.black
         if let tableSection = TableSection(rawValue: section) {
             switch tableSection {
@@ -96,6 +97,7 @@ class ConversationsListViewController: UIViewController, UITableViewDataSource, 
         return view
     }
     
+    // TODO это все костыль нужно переписать на декодирование json
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "DialogTableViewCell"
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? DialogTableViewCell  else {
