@@ -21,6 +21,8 @@
 		1179EB832210A7F800B1DE2B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179EB822210A7F800B1DE2B /* Logger.swift */; };
 		119426F522233A7E00EEECC5 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119426F422233A7E00EEECC5 /* MessageTableViewCell.swift */; };
 		119426F722233DD500EEECC5 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119426F622233DD500EEECC5 /* ConversationViewController.swift */; };
+		11B997C1222AC31B003306C4 /* ThemesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B997C0222AC31B003306C4 /* ThemesViewController.m */; };
+		11B997C5222AE69F003306C4 /* Themes.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B997C4222AE69F003306C4 /* Themes.m */; };
 		11F724342211C4AC00042B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F724332211C4AC00042B0E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,12 @@
 		1179EB822210A7F800B1DE2B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		119426F422233A7E00EEECC5 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		119426F622233DD500EEECC5 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		11B997BE222AC31A003306C4 /* TnkMessanger-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TnkMessanger-Bridging-Header.h"; sourceTree = "<group>"; };
+		11B997BF222AC31B003306C4 /* ThemesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemesViewController.h; sourceTree = "<group>"; };
+		11B997C0222AC31B003306C4 /* ThemesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemesViewController.m; sourceTree = "<group>"; };
+		11B997C3222AE690003306C4 /* Themes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Themes.h; sourceTree = "<group>"; };
+		11B997C4222AE69F003306C4 /* Themes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Themes.m; sourceTree = "<group>"; };
+		11B997C6222B017D003306C4 /* ThemesViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemesViewControllerDelegate.h; sourceTree = "<group>"; };
 		11F724332211C4AC00042B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +121,8 @@
 		112C9423220EF53C0069BC75 /* TnkMessanger */ = {
 			isa = PBXGroup;
 			children = (
+				11B997BE222AC31A003306C4 /* TnkMessanger-Bridging-Header.h */,
+				11B997C2222AC975003306C4 /* ObjC */,
 				111147502222C6F5007BFC1E /* ConversationsListViewController.swift */,
 				119426F622233DD500EEECC5 /* ConversationViewController.swift */,
 				112C9424220EF53C0069BC75 /* AppDelegate.swift */,
@@ -147,6 +157,18 @@
 				112C9449220EF53D0069BC75 /* Info.plist */,
 			);
 			path = TnkMessangerUITests;
+			sourceTree = "<group>";
+		};
+		11B997C2222AC975003306C4 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				11B997C6222B017D003306C4 /* ThemesViewControllerDelegate.h */,
+				11B997C3222AE690003306C4 /* Themes.h */,
+				11B997C4222AE69F003306C4 /* Themes.m */,
+				11B997BF222AC31B003306C4 /* ThemesViewController.h */,
+				11B997C0222AC31B003306C4 /* ThemesViewController.m */,
+			);
+			path = ObjC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +239,7 @@
 				TargetAttributes = {
 					112C9420220EF53C0069BC75 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					112C9437220EF53D0069BC75 = {
 						CreatedOnToolsVersion = 10.1;
@@ -289,7 +312,9 @@
 				1179EB81221095B100B1DE2B /* StateTracker.swift in Sources */,
 				111147512222C6F5007BFC1E /* ConversationsListViewController.swift in Sources */,
 				112C942D220EF53C0069BC75 /* TnkMessanger.xcdatamodeld in Sources */,
+				11B997C5222AE69F003306C4 /* Themes.m in Sources */,
 				111147532222C7A8007BFC1E /* DialogTableViewCell.swift in Sources */,
+				11B997C1222AC31B003306C4 /* ThemesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +490,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MVU6Q92ZB5;
 				INFOPLIST_FILE = TnkMessanger/Info.plist;
@@ -476,6 +503,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Chzh.TnkMessanger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "TnkMessanger/TnkMessanger-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -485,6 +514,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MVU6Q92ZB5;
 				INFOPLIST_FILE = TnkMessanger/Info.plist;
@@ -498,6 +529,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Chzh.TnkMessanger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "TnkMessanger/TnkMessanger-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
