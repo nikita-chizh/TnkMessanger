@@ -23,6 +23,7 @@
 		119426F722233DD500EEECC5 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119426F622233DD500EEECC5 /* ConversationViewController.swift */; };
 		11B997C1222AC31B003306C4 /* ThemesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B997C0222AC31B003306C4 /* ThemesViewController.m */; };
 		11B997C5222AE69F003306C4 /* Themes.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B997C4222AE69F003306C4 /* Themes.m */; };
+		11B997C8222C34B5003306C4 /* ThemeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B997C7222C34B5003306C4 /* ThemeTracker.swift */; };
 		11F724342211C4AC00042B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F724332211C4AC00042B0E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		11B997C3222AE690003306C4 /* Themes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Themes.h; sourceTree = "<group>"; };
 		11B997C4222AE69F003306C4 /* Themes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Themes.m; sourceTree = "<group>"; };
 		11B997C6222B017D003306C4 /* ThemesViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemesViewControllerDelegate.h; sourceTree = "<group>"; };
+		11B997C7222C34B5003306C4 /* ThemeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTracker.swift; sourceTree = "<group>"; };
 		11F724332211C4AC00042B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 				1140E3552221A8F500A667FD /* EditButton.swift */,
 				111147522222C7A8007BFC1E /* DialogTableViewCell.swift */,
 				119426F422233A7E00EEECC5 /* MessageTableViewCell.swift */,
+				11B997C7222C34B5003306C4 /* ThemeTracker.swift */,
 			);
 			path = TnkMessanger;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				11B997C5222AE69F003306C4 /* Themes.m in Sources */,
 				111147532222C7A8007BFC1E /* DialogTableViewCell.swift in Sources */,
 				11B997C1222AC31B003306C4 /* ThemesViewController.m in Sources */,
+				11B997C8222C34B5003306C4 /* ThemeTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

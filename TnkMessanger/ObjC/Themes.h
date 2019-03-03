@@ -14,10 +14,11 @@
 UIColor *theme0;
 UIColor *theme1;
 UIColor *theme2;
-
 }
-- (id) initWithColor: (UIColor *) color themeNum: (int)n;
-- (void) setColor: (UIColor *) color themeNum: (int)n;
+- (id) initWithColors: (UIColor *) c0 color1: (UIColor *)c1 color2: (UIColor *)c2;
+- (UIColor *) getFirst;
+- (UIColor *) getSecond;
+- (UIColor *) getThird;
 
 @end
 

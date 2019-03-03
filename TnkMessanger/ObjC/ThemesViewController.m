@@ -18,8 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Add an action in current code file (i.e. target)
+    model = [model initWithColors: _white color1: _black color2: _red];
     [Theme0 addTarget:self action:@selector(setThemeOne:)
+     forControlEvents:UIControlEventTouchUpInside];
+    [Theme1 addTarget:self action:@selector(setThemeTwo:)
+     forControlEvents:UIControlEventTouchUpInside];
+    [Theme2 addTarget:self action:@selector(setThemeThree:)
      forControlEvents:UIControlEventTouchUpInside];
 
     self->_delegate = self;
@@ -27,13 +31,15 @@
     }
 
 - (void)setThemeOne:(UIButton *)button {
-    NSLog(@"Button Pressed");
-    UIColor *color = [UIColor colorWithRed:66/255.0
-                                     green:79/255.0
-                                      blue:91/255.0
-                                     alpha:1];
+    [_delegate themesViewController:self didSelectTheme: model.getFirst];
+}
 
-    [_delegate themesViewController:self didSelectTheme: color];
+- (void)setThemeTwo:(UIButton *)button {
+    [_delegate themesViewController:self didSelectTheme: model.getSecond];
+}
+
+- (void)setThemeThree:(UIButton *)button {
+    [_delegate themesViewController:self didSelectTheme: model.getThird];
 }
 
 -(void)themesViewController: (ThemesViewController *)controller
@@ -45,10 +51,6 @@
 
 
 - (void)dealloc {
-    [Theme1 release];
-    [Theme0 release];
-    [Theme1 release];
-    [Theme2 release];
     [Theme0 release];
     [Theme1 release];
     [Theme2 release];

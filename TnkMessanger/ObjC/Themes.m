@@ -12,22 +12,28 @@
 
 @implementation Themes
 
-- (id) initWithColor: (UIColor *) color themeNum: (int)n{
-    self = [super init];
+- (id) initWithColors: (UIColor *) c0 color1: (UIColor *)c1 color2: (UIColor *)c2{
+    self = [self init];
     if(self)
     {
-        [self setColor: color themeNum: n];
+        theme0 = c0;
+        theme1 = c1;
+        theme2 = c2;
     }
     return self;
 }
 
-- (void) setColor: (UIColor *) color themeNum: (int)n{
-    if(n == 0)
-        theme0 = color;
-    if(n == 1)
-        theme1 = color;
-    if(n == 2)
-        theme2 = color;
-    }
+- (UIColor *) getFirst{
+    return theme0;
+}
+
+- (UIColor *) getSecond{
+    return theme1;
+}
+
+- (UIColor *) getThird{
+    return theme2;
+}
+
 
 @end
