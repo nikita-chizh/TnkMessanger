@@ -5,7 +5,7 @@
 //  Created by Никита on 02/03/2019.
 //  Copyright © 2019 Никита. All rights reserved.
 //
-
+#import "TnkMessanger-Swift.h"
 #import "ThemesViewController.h"
 #import "Themes.h"
 
@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    model = [Themes alloc];
     model = [model initWithColors: _white color1: _black color2: _red];
     [Theme0 addTarget:self action:@selector(setThemeOne:)
      forControlEvents:UIControlEventTouchUpInside];
@@ -45,7 +45,7 @@
 -(void)themesViewController: (ThemesViewController *)controller
              didSelectTheme:(UIColor *)selectedTheme{
     NSLog(@"themesViewController");
-
+    [ThemeTracker setTheme: selectedTheme];
 }
 
 

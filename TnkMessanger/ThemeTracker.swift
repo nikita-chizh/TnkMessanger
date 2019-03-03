@@ -9,7 +9,11 @@
 import Foundation
 import UIKit
 
-class ThemeTracker{
-    static var currentTheme = UIColor()
+@objcMembers class ThemeTracker: NSObject{
+    static var currentTheme = UIColor.white
+    
+    @objc class func setTheme (_ color: UIColor) {
+        ThemeTracker.currentTheme = color
+    }
 }
 
