@@ -53,6 +53,8 @@ class ConversationsListViewController: UIViewController, UITableViewDataSource, 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UINavigationBar.appearance().backgroundColor = ThemeTracker.currentTheme
+
         msgTableView.delegate = self
         msgTableView.dataSource = self
         navItem.title = "Tinkoff Messanger"
@@ -60,6 +62,7 @@ class ConversationsListViewController: UIViewController, UITableViewDataSource, 
         image = image?.withRenderingMode(.alwaysOriginal)
         buttonItem.image = image
         buttonItem.style = .plain
+        
     }
 
     // MARK: - Table view data source

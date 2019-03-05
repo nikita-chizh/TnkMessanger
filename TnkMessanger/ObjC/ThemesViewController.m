@@ -5,9 +5,9 @@
 //  Created by Никита on 02/03/2019.
 //  Copyright © 2019 Никита. All rights reserved.
 //
-#import "TnkMessanger-Swift.h"
 #import "ThemesViewController.h"
 #import "Themes.h"
+
 
 @interface ThemesViewController ()
 
@@ -19,10 +19,13 @@
     [super viewDidLoad];
     model = [Themes alloc];
     model = [model initWithColors: _white color1: _black color2: _red];
+    
     [Theme0 addTarget:self action:@selector(setThemeOne:)
      forControlEvents:UIControlEventTouchUpInside];
+    
     [Theme1 addTarget:self action:@selector(setThemeTwo:)
      forControlEvents:UIControlEventTouchUpInside];
+    
     [Theme2 addTarget:self action:@selector(setThemeThree:)
      forControlEvents:UIControlEventTouchUpInside];
 
@@ -45,12 +48,15 @@
 -(void)themesViewController: (ThemesViewController *)controller
              didSelectTheme:(UIColor *)selectedTheme{
     NSLog(@"themesViewController");
-    [ThemeTracker setTheme: selectedTheme];
+    //[[UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTextColor:[UIColor whiteColor]];
+
+    [[UINavigationBar appearance] setBackgroundColor:[UIColor orangeColor]];
+    NSLog(@"check");
+
 }
 
-
-
 - (void)dealloc {
+    [model dealloc];
     [Theme0 release];
     [Theme1 release];
     [Theme2 release];

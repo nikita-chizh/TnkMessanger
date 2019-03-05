@@ -10,14 +10,13 @@
 		111147512222C6F5007BFC1E /* ConversationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111147502222C6F5007BFC1E /* ConversationsListViewController.swift */; };
 		111147532222C7A8007BFC1E /* DialogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111147522222C7A8007BFC1E /* DialogTableViewCell.swift */; };
 		112C9425220EF53C0069BC75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C9424220EF53C0069BC75 /* AppDelegate.swift */; };
-		112C9427220EF53C0069BC75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C9426220EF53C0069BC75 /* ViewController.swift */; };
+		112C9427220EF53C0069BC75 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C9426220EF53C0069BC75 /* ProfileController.swift */; };
 		112C942A220EF53C0069BC75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112C9428220EF53C0069BC75 /* Main.storyboard */; };
 		112C942D220EF53C0069BC75 /* TnkMessanger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 112C942B220EF53C0069BC75 /* TnkMessanger.xcdatamodeld */; };
 		112C9432220EF53D0069BC75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112C9430220EF53D0069BC75 /* LaunchScreen.storyboard */; };
 		112C943D220EF53D0069BC75 /* TnkMessangerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C943C220EF53D0069BC75 /* TnkMessangerTests.swift */; };
 		112C9448220EF53D0069BC75 /* TnkMessangerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C9447220EF53D0069BC75 /* TnkMessangerUITests.swift */; };
 		1140E3562221A8F500A667FD /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1140E3552221A8F500A667FD /* EditButton.swift */; };
-		1179EB81221095B100B1DE2B /* StateTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179EB80221095B100B1DE2B /* StateTracker.swift */; };
 		1179EB832210A7F800B1DE2B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179EB822210A7F800B1DE2B /* Logger.swift */; };
 		119426F522233A7E00EEECC5 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119426F422233A7E00EEECC5 /* MessageTableViewCell.swift */; };
 		119426F722233DD500EEECC5 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119426F622233DD500EEECC5 /* ConversationViewController.swift */; };
@@ -49,7 +48,7 @@
 		111147522222C7A8007BFC1E /* DialogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogTableViewCell.swift; sourceTree = "<group>"; };
 		112C9421220EF53C0069BC75 /* TnkMessanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TnkMessanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		112C9424220EF53C0069BC75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		112C9426220EF53C0069BC75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		112C9426220EF53C0069BC75 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		112C9429220EF53C0069BC75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		112C942C220EF53C0069BC75 /* TnkMessanger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TnkMessanger.xcdatamodel; sourceTree = "<group>"; };
 		112C9431220EF53D0069BC75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +60,6 @@
 		112C9447220EF53D0069BC75 /* TnkMessangerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TnkMessangerUITests.swift; sourceTree = "<group>"; };
 		112C9449220EF53D0069BC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1140E3552221A8F500A667FD /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
-		1179EB80221095B100B1DE2B /* StateTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTracker.swift; sourceTree = "<group>"; };
 		1179EB822210A7F800B1DE2B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		119426F422233A7E00EEECC5 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		119426F622233DD500EEECC5 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
@@ -128,9 +126,8 @@
 				111147502222C6F5007BFC1E /* ConversationsListViewController.swift */,
 				119426F622233DD500EEECC5 /* ConversationViewController.swift */,
 				112C9424220EF53C0069BC75 /* AppDelegate.swift */,
-				112C9426220EF53C0069BC75 /* ViewController.swift */,
+				112C9426220EF53C0069BC75 /* ProfileController.swift */,
 				11F724332211C4AC00042B0E /* Assets.xcassets */,
-				1179EB80221095B100B1DE2B /* StateTracker.swift */,
 				1179EB822210A7F800B1DE2B /* Logger.swift */,
 				112C9428220EF53C0069BC75 /* Main.storyboard */,
 				112C9430220EF53D0069BC75 /* LaunchScreen.storyboard */,
@@ -310,9 +307,8 @@
 				1140E3562221A8F500A667FD /* EditButton.swift in Sources */,
 				119426F722233DD500EEECC5 /* ConversationViewController.swift in Sources */,
 				119426F522233A7E00EEECC5 /* MessageTableViewCell.swift in Sources */,
-				112C9427220EF53C0069BC75 /* ViewController.swift in Sources */,
+				112C9427220EF53C0069BC75 /* ProfileController.swift in Sources */,
 				112C9425220EF53C0069BC75 /* AppDelegate.swift in Sources */,
-				1179EB81221095B100B1DE2B /* StateTracker.swift in Sources */,
 				111147512222C6F5007BFC1E /* ConversationsListViewController.swift in Sources */,
 				112C942D220EF53C0069BC75 /* TnkMessanger.xcdatamodeld in Sources */,
 				11B997C5222AE69F003306C4 /* Themes.m in Sources */,
@@ -493,10 +489,12 @@
 		112C944D220EF53D0069BC75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MVU6Q92ZB5;
 				INFOPLIST_FILE = TnkMessanger/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -517,10 +515,12 @@
 		112C944E220EF53D0069BC75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MVU6Q92ZB5;
 				INFOPLIST_FILE = TnkMessanger/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
