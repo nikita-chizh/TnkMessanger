@@ -29,7 +29,7 @@ class ConversationViewController: UIViewController, UITableViewDataSource, UITab
         chatTableView.estimatedRowHeight = 500
         chatTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         //
-        chatBar.topItem?.title = userName
+        self.title = userName
         //
         testData += testData
         testData += testData

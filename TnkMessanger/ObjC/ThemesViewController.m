@@ -49,8 +49,10 @@
              didSelectTheme:(UIColor *)selectedTheme{
     NSLog(@"themesViewController");
     //[[UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTextColor:[UIColor whiteColor]];
+    //[[UINavigationController appearance] setBarTintColor:[UIColor orangeColor]];
+    
+    self.navigationController.navigationBar.backgroundColor= [UIColor orangeColor];
 
-    [[UINavigationBar appearance] setBackgroundColor:[UIColor orangeColor]];
     NSLog(@"check");
 
 }

@@ -280,30 +280,17 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ntn-ll-BMf">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="zKv-eJ-kb9"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Title" id="mSI-k0-LBP"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="fYd-vO-iXM" firstAttribute="top" secondItem="mHs-QI-qhf" secondAttribute="top" constant="44" id="3qR-ck-kru"/>
                             <constraint firstItem="mHs-QI-qhf" firstAttribute="bottom" secondItem="fYd-vO-iXM" secondAttribute="bottom" constant="8" id="7Ba-ch-0Qw"/>
-                            <constraint firstItem="Ntn-ll-BMf" firstAttribute="leading" secondItem="mHs-QI-qhf" secondAttribute="leading" id="9mc-gz-2qI"/>
                             <constraint firstItem="mHs-QI-qhf" firstAttribute="trailing" secondItem="fYd-vO-iXM" secondAttribute="trailing" constant="5" id="Be6-0E-H3W"/>
-                            <constraint firstItem="fYd-vO-iXM" firstAttribute="top" secondItem="Ntn-ll-BMf" secondAttribute="bottom" id="cb4-j7-Mni"/>
-                            <constraint firstItem="Ntn-ll-BMf" firstAttribute="top" secondItem="mHs-QI-qhf" secondAttribute="top" id="imH-uV-Ad8"/>
-                            <constraint firstItem="Ntn-ll-BMf" firstAttribute="trailing" secondItem="mHs-QI-qhf" secondAttribute="trailing" id="uc4-jf-Ejt"/>
                             <constraint firstItem="fYd-vO-iXM" firstAttribute="leading" secondItem="mHs-QI-qhf" secondAttribute="leading" constant="5" id="y6I-VI-oW7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mHs-QI-qhf"/>
                     </view>
                     <connections>
-                        <outlet property="chatBar" destination="Ntn-ll-BMf" id="Xoo-WR-Eja"/>
                         <outlet property="chatTableView" destination="fYd-vO-iXM" id="dol-Yw-p50"/>
                     </connections>
                 </viewController>
