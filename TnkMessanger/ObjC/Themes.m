@@ -13,12 +13,18 @@
 @implementation Themes
 
 - (id) initWithColors: (UIColor *) c0 color1: (UIColor *)c1 color2: (UIColor *)c2{
-    self = [self init];
+    self = [super init];
     if(self)
     {
-        theme0 = c0;
-        theme1 = c1;
-        theme2 = c2;
+        theme0 = [UIColor orangeColor];
+        theme1 = [UIColor blueColor];
+        theme2 = [UIColor redColor];
+
+        // EXC_BAD_ACCESS (code=1
+        // этот код так и не заработал
+//        theme0 = c0;
+//        theme1 = c1;
+//        theme2 = c2;
     }
     return self;
 }

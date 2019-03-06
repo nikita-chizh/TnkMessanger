@@ -17,8 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    model = [Themes alloc];
-    model = [model initWithColors: _white color1: _black color2: _red];
+    self->model = [[Themes alloc] initWithColors: _white color1: _black color2: _red];
     
     [Theme0 addTarget:self action:@selector(setThemeOne:)
      forControlEvents:UIControlEventTouchUpInside];
@@ -51,7 +50,7 @@
     //[[UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTextColor:[UIColor whiteColor]];
     //[[UINavigationController appearance] setBarTintColor:[UIColor orangeColor]];
     
-    self.navigationController.navigationBar.backgroundColor= [UIColor orangeColor];
+    self.navigationController.navigationBar.backgroundColor = selectedTheme;
 
     NSLog(@"check");
 
